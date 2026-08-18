@@ -1,0 +1,40 @@
+# Unity
+[Ll]
+[Tt]emp/
+[Oo]bj]
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+[Rr]ecordings/
+/[Aa]ssets/AssetStoreTools*
+/[Aa]ssets/Plugins/Editor/JetBrains*
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+*.apk
+*.aab
+*.unitypackage
+crashlytics-buildid.txt
+/[Aa]ssets/AddressableAssetsData/DataBuilders/
+/[Aa]ssets/AddressableAssetsData/AssetGroups/Schemas/
+Library/
+InitTestScene*.unity*
+
+# Datos de participantes — nunca al repo (solo la carpeta raíz)
+/data/
+/admin/
+**/P[0-9]*.jsonl
+**/P[0-9]*.csv
+
+# OS
+.DS_Store
+Thumbs.db
+.Rhistory
+
+# IDE
+.vs/
+.idea/
+*.csproj.user
