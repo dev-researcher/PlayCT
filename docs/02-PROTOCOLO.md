@@ -48,14 +48,7 @@ La única diferencia intencional es **la estructura informativa del material**.
 
 El diseño original proponía un tutor que verbalizaba descomposición y evaluación solo en A y B. Eso habría hecho imposible saber si la transferencia viene del puzzle o de la instrucción.
 
-**Decisión:** la guía es un factor **constante**.
-
-- No se nombran componentes de CT en ningún grupo.
-- No se dicta el movimiento correcto en ningún grupo.
-- Las pistas siguen la misma máquina de estados (silencio → señalar el error del material → pregunta sobre el estado presente).
-- El texto de la pregunta se rellena con objetos de **esa** mesa (“disco”, “forma”, “cara”), no con teoría.
-
-Así, si A y B superan a C, la explicación más parsimoniosa es el material, no “les hablaron más de pensamiento computacional”.
+**Decisión para conferencia:** durante TRAIN las tres condiciones reciben **el mismo texto**. Cero preguntas de estrategia en A que C no oiga. El material rechaza lo ilegal. Las preguntas de estrategia van al debrief **después** de S1. Detalle: [04-GUIA.md](04-GUIA.md) y [14-PARA-CONFERENCIA.md](14-PARA-CONFERENCIA.md).
 
 Un diseño 2×2 (material × guía sí/no) queda como **estudio 2**, no como este. Este paper necesita potencia para tres grupos, no para seis celdas.
 
