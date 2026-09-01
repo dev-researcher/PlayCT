@@ -7,7 +7,13 @@ El diseño pedagógico sigue principios Montessori aplicados a educación univer
 **Institución:** Universidad Cenfotec, Costa Rica.  
 **Idioma de la experiencia y de los instrumentos:** español.  
 **Headset de laboratorio:** Meta Quest 3, sesión estacionaria.  
-**Desarrollo diario:** el mismo runtime en escritorio, después WebXR.
+**Desarrollo diario:** abra el prototipo de mesa en el navegador (sin casco).
+
+```bash
+python3 -m http.server 8765
+```
+
+Luego abra [http://127.0.0.1:8765/web/](http://127.0.0.1:8765/web/). Mouse: tomar el disco de arriba y soltarlo en Origen, Apoyo o Destino. Si no corresponde, el disco vuelve.
 
 Hay **dos líneas**. El paper de transferencia (línea A) no usa los seis juegos ni deja elegir paquete. La plataforma (línea B) sí. Detalle: [docs/12-DOS-LINEAS.md](docs/12-DOS-LINEAS.md).
 
@@ -27,7 +33,7 @@ Hay **dos líneas**. El paper de transferencia (línea A) no usa los seis juegos
 | [docs/10-VENUES.md](docs/10-VENUES.md) | Dónde publicar y qué ciclo **no** intentar |
 | [docs/11-GUION-SESION.md](docs/11-GUION-SESION.md) | Lo que dice la persona experimentadora, minuto a minuto |
 | [docs/12-DOS-LINEAS.md](docs/12-DOS-LINEAS.md) | RCT vs plataforma de 6 materiales: lo que no se mezcla |
-| [docs/13-SEIS-MATERIALES.md](docs/13-SEIS-MATERIALES.md) | Patio de carga, Fábrica, Red de agua, desktop→WebXR |
+| [docs/14-PARA-CONFERENCIA.md](docs/14-PARA-CONFERENCIA.md) | Confusor, control, far transfer, novedad vs iThinkSmart/Rubikon, checklist IEEE VR/CHI |
 
 Código Unity (núcleo): [`unity/Assets/PlayCT/`](unity/Assets/PlayCT/).
 

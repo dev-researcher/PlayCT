@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PlayCT — Torres de Hanói</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="veil">
+      <p class="veil-kicker">PlayCT</p>
+      <h1>Mueve la torre al palo de la derecha</h1>
+      <ol class="steps">
+        <li>Toma solo el disco de <strong>arriba</strong>.</li>
+        <li>Suéltalo en otro palo.</li>
+        <li>Un disco grande <strong>no</strong> se pone sobre uno más pequeño.</li>
+      </ol>
+      <button type="button" id="entrar">Empezar</button>
+    </div>
+
+    <header id="topbar" hidden>
+      <div>
+        <p class="brand">PlayCT</p>
+        <h2 id="goal">Lleva toda la torre a Destino</h2>
+      </div>
+      <p id="progress">Paso 1 de 3</p>
+    </header>
+
+    <aside id="howto" hidden>
+      <h3>Cómo se juega</h3>
+      <ul>
+        <li>Arrastra el disco de <em>arriba</em> de un palo.</li>
+        <li>Suéltalo en Origen, Apoyo o Destino.</li>
+        <li>No puedes poner un disco grande sobre uno más pequeño.</li>
+      </ul>
+      <p class="goal-note">La meta: la torre completa en <strong>Destino</strong>.</p>
+    </aside>
+
+    <p id="coach" hidden>Arrastra el disco de arriba hacia otro palo.</p>
+
+    <div id="peg-legend" hidden>
+      <span>Origen</span>
+      <span>Apoyo</span>
+      <span class="dest">Destino</span>
+    </div>
+
+    <canvas id="scene"></canvas>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
