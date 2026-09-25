@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PlayCT — El Correo</title>
+    <link rel="stylesheet" href="../comun.css" />
+  </head>
+  <body class="correo">
+    <div class="velo" id="velo">
+      <p class="marca">PlayCT <span class="chip">prototipo</span></p>
+      <h1>El Correo</h1>
+      <p class="lead">Cinco poblados y caminos con cupo. Hay que llevar los tres paquetes a Destino. Un camino cortado no acepta paquetes. El de dos puntos no espera en D y no viaja junto al tercero.</p>
+      <button type="button" class="empezar" id="empezar">Empezar</button>
+    </div>
+    <header class="barra">
+      <div>
+        <p class="marca">PlayCT <span class="chip">prototipo</span></p>
+        <h1>El Correo</h1>
+        <p class="meta">De A a E · tres paquetes</p>
+      </div>
+      <p class="regla">Pulse un paquete y luego el poblado vecino. Si el camino no lo admite, el paquete no entra.</p>
+    </header>
+    <p class="coach" id="coach">Los tres paquetes están en A. Elija uno y un poblado unido por un camino.</p>
+    <div class="escena">
+      <div class="mesa" id="mesa"></div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

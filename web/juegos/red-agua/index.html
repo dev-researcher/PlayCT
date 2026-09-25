@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PlayCT — Red de agua</title>
+    <link rel="stylesheet" href="../comun.css" />
+  </head>
+  <body class="red">
+    <div class="velo" id="velo">
+      <p class="marca">PlayCT <span class="chip">prototipo</span></p>
+      <h1>Red de agua</h1>
+      <p class="lead">Arme un modelo de la fuente a la zona, marque qué está ignorando, prediga el nivel del tanque y simule. Si el agua no llega, el modelo se puede cambiar. No hay un único tendido correcto.</p>
+      <button type="button" class="empezar" id="empezar">Empezar</button>
+    </div>
+    <header class="barra">
+      <div>
+        <p class="marca">PlayCT <span class="chip">prototipo</span></p>
+        <h1>Red de agua</h1>
+        <p class="meta">Demanda estable · prototipo de un escenario</p>
+      </div>
+      <p class="regla">Fuente, bomba, tubería, tanque, válvula y zona. El sensor puede quedar fuera.</p>
+    </header>
+    <p class="coach" id="coach">Coloque los módulos en el tramo. El agua va de izquierda a derecha.</p>
+    <div class="escena">
+      <div class="mesa" id="mesa"></div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
