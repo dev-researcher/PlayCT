@@ -17,6 +17,10 @@ namespace PlayCT.Tasks.Gabinete
         int _placed;
         int _target;
 
+        public int PresentationIndex => _index;
+        public int Placed => _placed;
+        public int Target => _target;
+
         public void Begin()
         {
             _index = 0;

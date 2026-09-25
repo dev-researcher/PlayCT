@@ -15,7 +15,7 @@ La conversación pide simular **sin casco** y luego el mismo estado en cualquier
 | Idioma de UI | español, `StringsEs` |
 | Logs | JSONL local |
 
-El RCT se corre en Quest 3. El desarrollo no espera el casco. Copiar `unity/Assets/PlayCT/` a Unity 6 LTS e instalar XRI para el build de laboratorio.
+El RCT se corre en Quest 3. El desarrollo no espera el casco. El proyecto Unity 6 LTS ya está en `unity/` (escena `MesaPreparada`, XRI y OpenXR). Pasos de Play y de build: `unity/README.md`.
 
 ## Módulos
 

@@ -43,12 +43,20 @@ namespace PlayCT.Core
             switch (condition)
             {
                 case ConditionId.Hanoi:
-                    if (hanoi != null) hanoi.Begin();
                     if (gabinete != null) gabinete.gameObject.SetActive(false);
+                    if (hanoi != null)
+                    {
+                        hanoi.gameObject.SetActive(true);
+                        hanoi.Begin();
+                    }
                     break;
                 case ConditionId.Gabinete:
                     if (hanoi != null) hanoi.gameObject.SetActive(false);
-                    if (gabinete != null) gabinete.Begin();
+                    if (gabinete != null)
+                    {
+                        gabinete.gameObject.SetActive(true);
+                        gabinete.Begin();
+                    }
                     break;
                 case ConditionId.Cubo:
                     Debug.LogWarning("Cubo: fase 2. En el piloto use Hanói o Gabinete.");
