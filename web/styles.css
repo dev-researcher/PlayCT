@@ -119,6 +119,15 @@ body.holding canvas {
   filter: brightness(1.06);
 }
 
+.otros {
+  margin: 1.4rem 0 0;
+  font-size: 0.98rem;
+}
+
+.otros a {
+  color: var(--accent);
+}
+
 #topbar {
   position: absolute;
   top: 0;

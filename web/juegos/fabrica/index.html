@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PlayCT — Fábrica en paralelo</title>
+    <link rel="stylesheet" href="../comun.css" />
+  </head>
+  <body class="fabrica">
+    <div class="velo" id="velo">
+      <p class="marca">PlayCT <span class="chip">prototipo</span></p>
+      <h1>Fábrica en paralelo</h1>
+      <p class="lead">No se empuja el robot con la mano. Se componen tarjetas y se pulsa Ejecutar todos. En esta presentación hay un solo robot: hay que llegar a la pieza y tomarla. REPETIR n aplica a la tarjeta que va detrás.</p>
+      <button type="button" class="empezar" id="empezar">Empezar</button>
+    </div>
+    <header class="barra">
+      <div>
+        <p class="marca">PlayCT <span class="chip">prototipo</span></p>
+        <h1>Fábrica en paralelo</h1>
+        <p class="meta">Presentación 1 de 5 · un robot</p>
+      </div>
+      <p class="regla">Avanzar, girar, tomar, soltar, repetir. Si la mano cierra en el aire, no hay pieza.</p>
+    </header>
+    <p class="coach" id="coach">La pieza está al fondo del pasillo. Componga las tarjetas y ejecute.</p>
+    <div class="escena">
+      <div class="mesa" id="mesa"></div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

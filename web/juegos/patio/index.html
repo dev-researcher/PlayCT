@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PlayCT — Patio de carga</title>
+    <link rel="stylesheet" href="../comun.css" />
+  </head>
+  <body class="patio">
+    <div class="velo" id="velo">
+      <p class="marca">PlayCT <span class="chip">prototipo</span></p>
+      <h1>Patio de carga</h1>
+      <p class="lead">Cajas en tres pilas. Solo se toma la de arriba. El pedido sale en orden, del 1 al 6. Si la de arriba no es la siguiente, hay que reubicarla en otra pila.</p>
+      <button type="button" class="empezar" id="empezar">Empezar</button>
+    </div>
+    <header class="barra">
+      <div>
+        <p class="marca">PlayCT <span class="chip">prototipo</span></p>
+        <h1>Patio de carga</h1>
+        <p class="meta">Presentación 1 · tres pilas, seis cajas</p>
+      </div>
+      <p class="regla">Una caja enterrada no sale. El pedido solo acepta la siguiente.</p>
+    </header>
+    <p class="coach" id="coach">La siguiente del pedido es la 1. Solo puede tomar la caja de arriba de cada pila.</p>
+    <div class="escena">
+      <div class="mesa" id="mesa"></div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

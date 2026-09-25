@@ -15,6 +15,8 @@ python3 -m http.server 8765
 
 Luego abra [http://127.0.0.1:8765/web/](http://127.0.0.1:8765/web/). Mouse: tomar el disco de arriba y soltarlo en Origen, Apoyo o Destino. Si no corresponde, el disco vuelve.
 
+Los otros materiales, en español y en el navegador, están en [web/juegos/](web/juegos/): Gabinete de formas, Cubo de relaciones, El Correo, Patio de carga, Fábrica en paralelo y Red de agua. Cubo, Correo, Patio, Fábrica y Red de agua llevan la marca de prototipo: el piloto de esta fase del repositorio es Hanói y Gabinete.
+
 ## Quest 3 (Unity 6)
 
 El proyecto está en [`unity/`](unity/README.md). Editor **6000.3.24f1** con Android Build Support (SDK, NDK, OpenJDK). En Hub: Add project from disk → carpeta `unity/`. Abra `Assets/Scenes/MesaPreparada.unity` y pulse Play: Hanói con ratón, sin copiar `session.json` (`P000`). Un `session.json` en `Application.persistentDataPath` sigue teniendo prioridad.
