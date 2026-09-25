@@ -15,6 +15,24 @@ python3 -m http.server 8765
 
 Luego abra [http://127.0.0.1:8765/web/](http://127.0.0.1:8765/web/). Mouse: tomar el disco de arriba y soltarlo en Origen, Apoyo o Destino. Si no corresponde, el disco vuelve.
 
+## Quest 3 (Unity 6)
+
+El proyecto está en [`unity/`](unity/README.md). Editor **6000.3.24f1** con Android Build Support (SDK, NDK, OpenJDK). En Hub: Add project from disk → carpeta `unity/`. Abra `Assets/Scenes/MesaPreparada.unity` y pulse Play: Hanói con ratón, sin copiar `session.json` (`P000`). Un `session.json` en `Application.persistentDataPath` sigue teniendo prioridad.
+
+Build (o **PlayCT → Configurar Quest 3** y File → Build Settings → Android):
+
+```bash
+Unity -batchmode -nographics -quit \
+  -projectPath "$(pwd)/unity" \
+  -buildTarget Android \
+  -executeMethod PlayCT.EditorTools.QuestBuildSetup.BuildApk \
+  -logFile unity/Logs/quest-build.log
+adb install -r unity/Build/PlayCT.apk
+adb shell am start -n com.cenfotec.playct/com.unity3d.player.UnityPlayerGameActivity
+```
+
+Detalle de sesión, logs y el rig estacionario: [`unity/README.md`](unity/README.md).
+
 Hay **dos líneas**. El paper de transferencia (línea A) no usa los seis juegos ni deja elegir paquete. La plataforma (línea B) sí. Detalle: [docs/12-DOS-LINEAS.md](docs/12-DOS-LINEAS.md).
 
 ## Cómo leer este repositorio
@@ -35,7 +53,7 @@ Hay **dos líneas**. El paper de transferencia (línea A) no usa los seis juegos
 | [docs/12-DOS-LINEAS.md](docs/12-DOS-LINEAS.md) | RCT vs plataforma de 6 materiales: lo que no se mezcla |
 | [docs/14-PARA-CONFERENCIA.md](docs/14-PARA-CONFERENCIA.md) | Confusor, control, far transfer, novedad vs iThinkSmart/Rubikon, checklist IEEE VR/CHI |
 
-Código Unity (núcleo): [`unity/Assets/PlayCT/`](unity/Assets/PlayCT/).
+Proyecto Unity 6 (Quest 3, escena `MesaPreparada`): [`unity/README.md`](unity/README.md). Abra la carpeta `unity/` con Unity **6000.3.24f1**. No copie los scripts a otro proyecto.
 
 ## Decisión central
 

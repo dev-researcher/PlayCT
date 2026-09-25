@@ -1,12 +1,15 @@
 {
-    "name": "PlayCT",
-    "rootNamespace": "PlayCT",
+    "name": "PlayCT.Editor",
+    "rootNamespace": "PlayCT.EditorTools",
     "references": [
-        "Unity.InputSystem",
-        "Unity.XR.CoreUtils",
-        "Unity.XR.Interaction.Toolkit"
+        "Unity.XR.Management",
+        "Unity.XR.Management.Editor",
+        "Unity.XR.OpenXR",
+        "Unity.XR.OpenXR.Editor"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
